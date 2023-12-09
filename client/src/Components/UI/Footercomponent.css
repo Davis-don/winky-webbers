@@ -1,0 +1,32 @@
+.brand-footer-name{
+    text-align: center;
+    width:max-content;
+    margin: auto;
+ }
+  .footer-brand{
+ font-size: 40px;
+  } 
+  .site-links{
+
+  }
+  .site-links{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    width:max-content;
+    margin:auto;
+  }
+  .site-links li:hover{
+  border-bottom: 1px solid white;
+  }
+  .bottom-ul-icon-holder{
+display: flex;
+flex-direction: row;
+gap:20px;
+justify-content: center;
+margin-top: 20px;
+  }
+  .bottom-icon{
+ color:white;
+ font-size: x-large;
+  }

@@ -1,0 +1,63 @@
+
+@media (max-width: 480px){
+.overall-servive-container{
+width:100%;
+height: 100%;
+}
+.Service-page-introduction{
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+padding: 20px;
+}
+.Service-page-introduction div{
+    width:50vw;
+}
+.service-introduction-image{
+width: 100%;
+height: 250px;
+}
+.service-introduction-image img{
+width:100%;
+height: 100%;
+object-fit: cover;
+}
+.specific-services-overall{
+display: flex;
+flex-direction: column;
+gap:20px;
+}
+.specific-service{
+    width:80vw;
+    height: max-content;
+    padding: 20px;
+    margin: auto;
+    background-color: #F1F0FA;
+}
+.service-label{
+width:calc(70vw - 40px);
+background-color: #4E14AE;
+margin-left: auto;
+margin-right:auto;
+margin-top: 10px;
+padding: 10px;
+}
+.service-price{
+width: max-content;
+margin: auto;
+}
+.sign-up-btn-container{
+width: max-content;
+margin: auto;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px){   /* Media Query for Tablets Ipads portrait mode */
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px){   /* Media Query for Laptops and Desktops */
+}
+
+
+@media (min-width: 1281px) {          /* Media Query for Large screens */
+}

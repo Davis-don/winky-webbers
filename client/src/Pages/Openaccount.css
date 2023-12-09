@@ -1,0 +1,45 @@
+@media (max-width: 480px){
+.overall-open-account{
+    height: 125vh;
+    background-color: black;
+}
+.overall-open-account{
+
+}
+.open-account-intro-image{
+    position:relative;
+    width:100%;
+    height: 220px;
+    background-color: orange;
+}
+.open-account-intro-image img{
+    position:absolute;
+    z-index: +1;
+    top:0px;
+width:100%;
+height: 100%;
+object-fit: cover;
+}
+.text-on-img-openaccount{
+position: absolute;
+z-index: +2;
+top:0px;
+width:100vw;
+}
+.openaccount-form-div{
+width:80vw;
+height: max-content;
+background-color: white;
+margin: auto;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px){   /* Media Query for Tablets Ipads portrait mode */
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px){   /* Media Query for Laptops and Desktops */
+}
+
+
+@media (min-width: 1281px) {          /* Media Query for Large screens */
+}

@@ -1,0 +1,70 @@
+.navbar-ui-component-overall{
+    height:max-content;
+    width: 100vw;
+    background-color: black;
+    position:relative;
+}
+.callnow-top-section{
+    padding: 10px;
+    background-color: rgb(223, 213, 240);
+    margin: 5px;
+    font-weight: bolder;
+}
+.logo-menulinks-icons-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px;
+    
+    }
+    .menu-user-icon-container{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    }
+
+    /*Side bar */
+   /* .sidebar-ov-container{
+    width:50vw;
+        height: 200px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: +4;
+        width: 100%;
+    } */
+    .side-bar-homepage-section{
+        width:50vw;
+        height: 200px;
+        background-color: white;
+        position: fixed;
+        top:100px;
+        z-index: +4;
+        width: 100%;
+         }
+         .close-hmpg-btn{
+        width: max-content;
+        margin-left:90vw;
+         }
+         .hmpg-side-links{
+        width:max-content;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        justify-content: center;
+         }
+         .hmpg-side-links li:hover{
+        border-bottom:2px solid black;
+         }
+         .hmpg-side-links li a{
+        
+         }
+         .hmpg-active{
+        border-bottom:1px solid red;
+     
+         }
+         .hmpg-side-links li{
+     
+         }
