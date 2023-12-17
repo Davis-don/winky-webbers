@@ -1,14 +1,15 @@
 .login-overall{
 width: 100vw;
-height: 80vh;
+height: 100vh;
 position:relative;
+background-color: black;
 }
 .login-img{
 position: absolute;
 z-index: +1;
 top:0px;
 width: 100vw;
-height: 80vh;
+height: 100vh;
 object-fit: cover;
 }
 .actual-login-section{

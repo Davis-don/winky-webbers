@@ -7,12 +7,13 @@ import contimg from '../Images/david-marcu-78A265wPiO4-unsplash.jpg'
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Navbar from '../Components/UI/Navbar'
 import Footercomponent from '../Components/UI/Footercomponent'
 export default function Contactscreen() {
   return (
     <div className='overall-contact-container'>
          <header className='Contact-header'>
-       
+       <Navbar/>
       </header>
       <div className='contact-pg-content'>
       <img src={contimg} alt='image of hills'/>

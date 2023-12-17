@@ -10,12 +10,13 @@ import { TiTick } from "react-icons/ti";
 import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoCallSharp } from "react-icons/io5";
+import Navbar from '../Components/UI/Navbar'
 import Footercomponent from '../Components/UI/Footercomponent'
 export default function Servicesscreen() {
   return (
     <div className='overall-servive-container'id='top-service-id'>
       <header className='service-header'>
-       
+       <Navbar/>
       </header>
       <div className='service-content'>
         <div className='Service-page-introduction'>
@@ -175,6 +176,7 @@ page when clicked</span></li>
         </div>
       </div>
       <footer style={{backgroundColor:'black',padding:'20px'}}>
+        <Footercomponent/>
       </footer>
       </div>
   )

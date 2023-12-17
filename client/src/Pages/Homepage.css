@@ -1,0 +1,495 @@
+@media (max-width: 540px){
+.overall-homepage-div{
+
+}
+.homepage-start-image-div{
+width:100vw;
+height: 75vh;
+background-color: black;
+position:relative;
+}
+.image-of-man{
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: +1;
+object-fit: cover;
+}
+.opacity-regulator{
+position: absolute;
+z-index: +2;
+top:0px;
+width: 100%;
+height: 100%;
+background-color: black;
+opacity: 0.4;
+}
+.hmpg-txt-img{
+position: absolute;
+z-index: +3;
+width:80vw;
+top: 50%;
+left: 50%;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
+.top-img-heading{
+border-right: 1px solid white;
+width: max-content;
+margin: auto;
+}
+.why-us-section{
+padding: 20px;
+}
+.why-us-ul{
+width:80vw;
+margin: auto;
+}
+.why-us-icon{
+width: max-content;
+height: max-content ;
+margin:auto;
+}
+.open-account-icon{
+    font-size: 80px;
+    color:#F58909
+}
+.why{
+font-size: larger;
+}
+.get-started-btn{
+    width: max-content;
+    margin: auto;
+}
+.start-btn{
+color:#F58909;
+}
+.our-services{
+background-color: #292828;
+padding: 20px;
+}
+.hmpg-services-holder-div{
+display: flex;
+flex-direction: column;
+gap:10px
+}
+.hmpg-service-sub{
+width:80vw;
+height: 200px;
+margin: auto;
+background-color: black;
+}
+.service-icon-rep{
+width:max-content;
+height: max-content;
+margin: auto;
+}
+.icon-service{
+font-size: 50px;
+}
+.service-t{
+    color:#F58909;   
+}
+.see-more-btn-div{
+    width: max-content;
+    margin: auto;
+}
+.see-more{
+    background-color: #F58909;
+}
+.plan-ul{
+width: max-content;
+margin: auto;
+}
+.pricing-btn{
+width: max-content;
+margin: auto;
+}
+.pricing-btn button{
+background-color: #F58909;
+}
+.work-section{
+background-color: black;
+padding: 20px;
+}
+.project-div{
+    width: 80vw;
+    height: 300px;
+    background-color: white;
+    margin: auto;
+}
+.proj-img{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.proj-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.testimonials{
+padding: 20px;
+background-color: rgb(239, 239, 239);
+}
+.testimonial-overall-holder{
+display: flex;
+flex-direction: column;
+gap:10px
+}
+.testimonial-content{
+background-color: white;
+padding: 10px;
+}
+.testimonial-align{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.client-image-div{
+width: 50px;
+height: 50px;
+}
+.client-image-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonial-comment{
+width:70vw;
+}
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .overall-homepage-div{
+
+    }
+    .homepage-start-image-div{
+    width:100vw;
+    height: 80vh;
+    background-color: black;
+    position:relative;
+    }
+    .image-of-man{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: +1;
+    object-fit: cover;
+    }
+    .opacity-regulator{
+    position: absolute;
+    z-index: +2;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    }
+    .hmpg-txt-img{
+    position: absolute;
+    z-index: +3;
+    width:80vw;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    }
+    .top-img-heading{
+    border-right: 1px solid white;
+    width: max-content;
+    margin: auto;
+    }
+    .why-us-section{
+    padding: 20px;
+    }
+    .why-us-ul{
+    width:80vw;
+    margin: auto;
+    }
+    .why-us-icon{
+    width: max-content;
+    height: max-content ;
+    margin:auto;
+    }
+    .open-account-icon{
+        font-size: 80px;
+        color:#F58909
+    }
+    .why{
+    font-size: larger;
+    }
+    .get-started-btn{
+        width: max-content;
+        margin: auto;
+    }
+    .start-btn{
+    color:#F58909;
+    }
+    .our-services{
+    background-color: #292828;
+    padding: 20px;
+    }
+    .hmpg-services-holder-div{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+     gap:20px;
+    }
+    /* .hmpg-service-sub{
+    width:80vw;
+    height: 200px;
+    margin: auto;
+    background-color: black;
+    } */
+    .service-icon-rep{
+    width:max-content;
+    height: max-content;
+    margin: auto;
+    }
+    .icon-service{
+    font-size: 50px;
+    }
+    .service-t{
+        color:#F58909;   
+    }
+    .see-more-btn-div{
+        width: max-content;
+        margin: auto;
+    }
+    .see-more{
+        background-color: #F58909;
+    }
+    .plan-ul{
+    /* width: max-content;
+    margin: auto; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    .pricing-btn{
+    width: max-content;
+    margin: auto;
+    }
+    .pricing-btn button{
+    background-color: #F58909;
+    }
+    .work-section{
+    background-color: black;
+    padding: 20px;
+    }
+    .project-div{
+        width:500px;
+        height: 400px;
+        background-color: white;
+        margin: auto;
+    }
+    .proj-img{
+        width: 100%;
+        height: 300px;
+        background-color: black;
+    }
+    .proj-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .testimonials{
+    padding: 20px;
+    background-color: rgb(239, 239, 239);
+    }
+    .testimonial-overall-holder{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    }
+    .testimonial-content{
+    background-color: white;
+    padding-left: 10px;
+    }
+    .testimonial-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .client-image-div{
+    width: 50px;
+    height: 50px;
+    }
+    .client-image-div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .testimonial-comment{
+    width: 35vw;
+    } 
+}
+@media screen and (min-width: 780px) {    /*desktop screens*/
+    .overall-homepage-div{
+
+    }
+    .homepage-start-image-div{
+    width:100vw;
+    height: 80vh;
+    background-color: black;
+    position:relative;
+    }
+    .image-of-man{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: +1;
+    object-fit: cover;
+    }
+    .opacity-regulator{
+    position: absolute;
+    z-index: +2;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    }
+    .hmpg-txt-img{
+    position: absolute;
+    z-index: +3;
+    width:80vw;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    }
+    .top-img-heading{
+    border-right: 1px solid white;
+    width: max-content;
+    margin: auto;
+    }
+    .why-us-section{
+    padding: 20px;
+    }
+    .why-us-ul{
+    width:80vw;
+    margin: auto;
+    }
+    .why-us-icon{
+    width: max-content;
+    height: max-content ;
+    margin:auto;
+    }
+    .open-account-icon{
+        font-size: 80px;
+        color:#F58909
+    }
+    .why{
+    font-size: larger;
+    }
+    .get-started-btn{
+        width: max-content;
+        margin: auto;
+    }
+    .start-btn{
+    color:#F58909;
+    }
+    .our-services{
+    background-color: #292828;
+    padding: 20px;
+    }
+    .hmpg-services-holder-div{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+     gap:20px;
+    }
+    /* .hmpg-service-sub{
+    width:80vw;
+    height: 200px;
+    margin: auto;
+    background-color: black;
+    } */
+    .service-icon-rep{
+    width:max-content;
+    height: max-content;
+    margin: auto;
+    }
+    .icon-service{
+    font-size: 50px;
+    }
+    .service-t{
+        color:#F58909;   
+    }
+    .see-more-btn-div{
+        width: max-content;
+        margin: auto;
+    }
+    .see-more{
+        background-color: #F58909;
+        width:150px;
+        height: 60px;
+    }
+    .plan-ul{
+    /* width: max-content;
+    margin: auto; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    .pricing-btn{
+    width: max-content;
+    margin: auto;
+    }
+    .pricing-btn button{
+    background-color: #F58909;
+    width:150px;
+        height: 60px;
+    }
+    .work-section{
+    background-color: black;
+    padding: 20px;
+    }
+    .project-div{
+        width:500px;
+        height: 400px;
+        background-color: white;
+        margin: auto;
+    }
+    .proj-img{
+        width: 100%;
+        height: 300px;
+        background-color: black;
+    }
+    .proj-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .testimonials{
+    padding: 20px;
+    background-color: rgb(239, 239, 239);
+    }
+    .testimonial-overall-holder{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    }
+    .testimonial-content{
+    background-color: white;
+    padding-left: 10px;
+    }
+    .testimonial-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .client-image-div{
+    width: 50px;
+    height: 50px;
+    }
+    .client-image-div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .testimonial-comment{
+    width: 35vw;
+    } 
+
+}
+

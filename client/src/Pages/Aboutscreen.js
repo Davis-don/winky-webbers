@@ -6,13 +6,14 @@ import Menuiconcomonent from '../Components/Menuiconcomonent'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Companyname from '../Components/Companyname'
 import donimg from '../Images/donieimg.jpg'
+import Navbar from '../Components/UI/Navbar'
 import Footercomponent from '../Components/UI/Footercomponent'
 
 export default function Aboutscreen() {
   return (
     <div className='overall-aboutscreen-page'>
         <header>
-          
+          <Navbar/>
         </header>
    <div className='about-top-image'>
       <img src={Aboutintroimg}alt='image showing snow with hills'/>
@@ -32,6 +33,7 @@ CEO/Founder Winky webbers</p>
     </div>
    </div>
    <footer className='about-footer'>
+    <Footercomponent/>
    </footer>
     </div>
   )

@@ -12,10 +12,11 @@ export default function Footercomponent() {
 
             <div className='overall-footer-links-section'>
                 <ul className='list-unstyled site-links'>
-                    <li ><Link to='/'className='text-light text-decoration-none'>Home</Link></li>
-                    <li><Link to='about'className='text-light text-decoration-none'>About</Link></li>
-                    <li><Link to='services'className='text-light text-decoration-none'>Services</Link></li>
-                    <li><Link to='about'className='text-light text-decoration-none'>About</Link></li>
+                    <li ><Link className='text-light text-decoration-none'  to='/'>Home</Link></li>
+                    <li><Link className='text-light text-decoration-none' to='/services'>Services</Link></li>
+            <li ><Link className='text-light text-decoration-none' to='/about'>About</Link></li>
+            <li><Link className='text-light text-decoration-none'to='/contact'>Contact</Link></li>
+            
                 </ul>
                 <ul className='bottom-ul-icon-holder list-unstyled'>
                     <li> <a href='https://www.youtube.com/@winkywebbers'><FaYoutube className='bottom-icon'/></a></li>
