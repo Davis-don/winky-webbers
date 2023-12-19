@@ -21,10 +21,10 @@ export default function Servicesscreen() {
       <div className='service-content'>
         <div className='Service-page-introduction'>
         <div>
-          <h5>Our Company Services</h5>
+          <h5 className="starting-title"style={{textAlign:'center'}}>Our Company Services</h5>
           </div>
         <div>
-          <p>We are a Web design and development company.We build websites of all kinds including E-commerce platfoms.</p>
+          <p className='service-top-paragraph' style={{textAlign:'center'}}>We are a Web design and development company.We build websites of all kinds including E-commerce platfoms.</p>
         </div>
         </div>
         <div className='service-introduction-image'>
@@ -166,13 +166,6 @@ page when clicked</span></li>
                 </Link>
               </div>
           </div>
-        </div>
-        <div className='getintouch'>
-        <ul>
-            <li><SiGmail className='get-icon'/> <span style={{color:'#8685EF',fontSize:'large'}}>winkywebbers@gmail.com</span></li>
-            <li><IoLogoWhatsapp className='get-icon'/><span style={{color:'#8685EF'}}>+254758420860</span></li>
-            <li><IoCallSharp className='get-icon' /><span style={{color:'#8685EF'}}>+254758420860</span></li>
-        </ul>
         </div>
       </div>
       <footer style={{backgroundColor:'black',padding:'20px'}}>

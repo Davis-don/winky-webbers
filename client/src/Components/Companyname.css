@@ -1,8 +1,35 @@
+@media (max-width: 540px){
+
+.overall-companyname-component{
+width: fit-content;
+padding: 5px;
+font-size: 23px;
+font-family: 'Ephesis', cursive;
+font-family: 'Yellowtail', cursive;
+font-weight: bold;
+color:white;
+}
+}
+@media screen and (min-width: 541px) and (max-width: 780px){
 .overall-companyname-component{
 width: fit-content;
 padding: 5px;
 font-size: 25px;
 font-family: 'Ephesis', cursive;
+font-family: 'Yellowtail', cursive;
 font-weight: bold;
 color:white;
 }
+}
+@media screen and (min-width: 781px){
+    .overall-companyname-component{
+        width: fit-content;
+        padding: 5px;
+        font-size: 29px;
+        font-family: 'Ephesis', cursive;
+        font-family: 'Yellowtail', cursive;
+        font-weight: bold;
+        color:white;
+        }
+}
+

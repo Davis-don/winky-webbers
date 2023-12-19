@@ -59,6 +59,23 @@ export default function Navbar() {
             <div className='company-name'>
              <Companyname/>
             </div>
+            <div className='large-screen-link'>
+            <ul className='list-unstyled lg-screen-ul'>
+            <li className='' ><Link className='text-decoration-none text-light fs-5 ' to='/'>Home</Link></li>
+            <li className='' ><Link className='text-decoration-none text-light fs-5'to='/services'>Services</Link></li>
+            <li className=''><Link className='text-decoration-none text-light fs-5' to='/about'>About</Link></li>
+            <li className=''><Link className='text-decoration-none text-light fs-5'to='/contact'>Contact</Link></li>
+            <li> <Link to="/Login"><button type='btn'className='btn text-light fs-5 bg-success'>Log in</button></Link></li>
+        </ul>
+            </div>
+            
+
+
+
+
+
+
+
             <div className='menu-user-icon-container'>
             <nav>
            <Link  to='/login'> 

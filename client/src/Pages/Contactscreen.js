@@ -20,11 +20,11 @@ export default function Contactscreen() {
       <div className='contact-on-img-txt'>
         <h2 className='text-dark'style={{textAlign:'center'}}>Contact us</h2>
         
-        <p className='text-light'>There is nothing we love more than seeing our clients so happy for our work. </p>
+        <p className='text-light' style={{textAlign:'center'}}>There is nothing we love more than seeing our clients so happy for our work. </p>
       </div>
       </div>
-      <div className='contact-components row'>
-        <div className='actual-comp col-sm-3'>
+      <div className='contact-components'>
+        <div className='actual-comp '>
             <div className='comp-icon rounded-circle p-2'>< IoIosCall style={{fontSize:'50px',color:'white'}}/></div>
             <div style={{width:'max-content',margin:'auto'}}className='p-3'>
                 <p style={{fontWeight:'bold'}}>Call us on<br/>
@@ -32,7 +32,7 @@ export default function Contactscreen() {
             </div>
             </div> 
             
-         <div className='actual-comp col-sm-3'>
+         <div className='actual-comp '>
          <div className='comp-icon rounded-circle p-2'><MdEmail style={{fontSize:'50px',color:'white'}}/></div>
             <div style={{width:'max-content',margin:'auto'}}className='p-3'>
                 <p style={{fontWeight:'bold'}}>Email us on<br/>
@@ -40,7 +40,7 @@ export default function Contactscreen() {
                 <br/>@gmail.com</p>
             </div>
          </div>
-         <div className='actual-comp col-sm-3'>
+         <div className='actual-comp'>
          <div className='comp-icon rounded-circle p-2'>< IoLogoWhatsapp style={{fontSize:'50px',color:'white'}}/></div>
             <div style={{width:'max-content',margin:'auto'}}className='p-3'>
                 <p style={{fontWeight:'bold'}}>Whatsap us on<br/>
@@ -64,6 +64,7 @@ export default function Contactscreen() {
         </form>
       </div>
       <footer className='bg-dark p-2'>
+        <Footercomponent/>
       </footer>
         </div>
   )

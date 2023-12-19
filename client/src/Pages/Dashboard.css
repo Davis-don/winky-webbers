@@ -1,3 +1,5 @@
+@media (max-width: 540px){
+
 /*shared classes*/
 .active{
 background-color: rgb(136, 101, 6);
@@ -92,9 +94,11 @@ z-index: +2;
 }
 .welcome-screen{
     background-color: rgb(9, 9, 43);
-    width: 90vw;
+    width: 70vw;
     height: max-content;
-    margin-left: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 5vw; */
  margin-top: 10px;
 
 }
@@ -206,4 +210,445 @@ margin-top: 20px;
     height: max-content;
     width: 100vw;
     padding: 20px;
+}
+}
+@media screen and (min-width: 541px) and (max-width: 780px) {
+    /*shared classes*/
+.active{
+    background-color: rgb(136, 101, 6);
+    border-radius: 10px;
+    padding:10px;
+    }
+    
+    /*dashboad css */
+    .first-link-overall{
+    height: max-content;
+    padding: 10px;
+    background-color:rgb(33, 2, 76);
+    }
+    .overall-Dashboard-container{
+    position: relative;
+    height: max-content;
+    background-color:rgb(33, 2, 76);
+    
+    
+    }
+    /* .clients-dashboard-render{
+        width:100%;
+        height: 100vh;
+        z-index: +2;
+        position: absolute;
+        } */
+    .overall-header-section{
+     position:relative;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(16, 1, 27);;
+    }
+    .left-header-section{
+    width: max-content;
+    height: max-content;
+    }
+    .right-header-section{
+    display: flex;
+    flex-direction: row;
+    }
+    .profile-picture{
+    width:45px;
+    height: 45px;
+    
+    }
+    .profile-picture img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .overall-client-dashboard{
+    position: relative;
+    }
+    
+    
+    .sidebar{
+        position: absolute;
+        z-index: +3;
+    }
+    .client-dashboard-sidebar{
+    width:100vw;
+    height:100v;
+    background-color: black;
+    position: fixed;
+    }
+    .close-btn{
+    width: max-content;
+    left: 90vw;
+    position: absolute;
+    top:0px;
+    background-color: white;
+    }
+    .dashboard-links{
+    width: max-content;
+    margin: auto;
+    padding: 20px;
+    }
+    
+    .client-list-div-ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    }
+    .client-list-div-ul li:hover{
+    border-bottom: 2px solid white;
+    }
+    .links-content-display{
+    position: absolute;
+    z-index: +2;
+    }
+    .welcome-screen{
+        background-color: rgb(9, 9, 43);
+        /* width: 70vw; */
+        height: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-left: 5vw; */
+     margin-top: 10px;
+    
+    }
+    .all-dashboad-div-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    }
+    .status-sec{
+    background-color: rgb(6, 81, 82);
+    border-radius: 5px;
+    }
+    .service-reg-container{
+    margin-left: 5vw;
+     margin-top: 10px;
+    height: max-content;
+    /* width: 90vw; */
+    background-color: rgb(9, 9, 43);
+    }
+     .proj-reg-btn{
+    background-color: black;
+    }
+    .financials{
+    width:80vw;
+    height: max-content;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: rgb(9, 9, 43);
+    }
+    .overall-pay-div{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    justify-content: space-evenly;
+    }
+    .pay-btn{
+    width: max-content;
+    margin: auto;
+    }
+    .a-o-b{
+    width:90vw;
+    height: max-content;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(9, 9, 43);
+    padding: 20px;
+    }
+    
+    
+    /* Services link css*/
+    .overall-service-link{
+    background-color:rgb(33, 2, 76);
+    width:100vw;
+    height: max-content;
+    padding: 10px;
+    }
+    table{
+    width: 90vw;
+    margin-left:5vw
+    }
+    tr{
+        border:1px solid white;
+       
+    }
+    td,th{
+        border-left: 1px solid white;
+        padding:5px;
+    }
+    .upload-supporting-documents{
+        width:90vw;
+        height: max-content;
+        padding: 15px;
+        background-color: rgb(9, 9, 43);
+        margin-right:auto;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+    .form-btn-holder{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*financials css*/
+    .overall-financial-component{
+    height:100vh;
+    width: 100vw;
+    background-color:rgb(33, 2, 76);
+    }
+    .financials-balance-display{
+    width:90vw;
+    height:max-content;
+    padding: 20px;
+    background-color: rgb(9, 9, 43);
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    }
+    .payment-categories{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .form-pay{
+    
+    }
+    
+    
+    .reg-overall-container{
+        background-color:rgb(33, 2, 76);
+        height: max-content;
+        width: 100vw;
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 781px){
+    /*shared classes*/
+    .active{
+        background-color: rgb(136, 101, 6);
+        border-radius: 10px;
+        padding:10px;
+        }
+        
+        /*dashboad css */
+        .first-link-overall{
+        height: max-content;
+        width: 100vw;
+        padding: 10px;
+        background-color:rgb(33, 2, 76);
+        
+        }
+        .overall-Dashboard-container{
+        position: relative;
+        height: max-content;
+        background-color:rgb(33, 2, 76);
+        
+        
+        }
+        .clients-dashboard-render{
+            width:100vw;
+            z-index: +2;
+            
+            }
+        .overall-header-section{
+         position:relative;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        background-color: rgb(16, 1, 27);;
+       
+        }
+        .left-header-section{
+        width: max-content;
+        height: max-content;
+        }
+        .right-header-section{
+        display: flex;
+        flex-direction: row;
+        }
+        .profile-picture{
+        width:45px;
+        height: 45px;
+        
+        }
+        .profile-picture img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .overall-client-dashboard{
+        position: relative;
+        }
+        
+        
+        .sidebar{
+            position: absolute;
+            z-index: +3;
+        }
+        .client-dashboard-sidebar{
+        width:100vw;
+        height:100v;
+        background-color: black;
+        position: fixed;
+        }
+        .close-btn{
+        width: max-content;
+        left: 90vw;
+        position: absolute;
+        top:0px;
+        background-color: white;
+        }
+        .dashboard-links{
+        width: max-content;
+        margin: auto;
+        padding: 20px;
+        }
+        
+        .client-list-div-ul{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        }
+        .client-list-div-ul li:hover{
+        border-bottom: 2px solid white;
+        }
+        .links-content-display{
+        position: absolute;
+        z-index: +2;
+        }
+        .welcome-screen{
+            background-color: rgb(9, 9, 43);
+            /* width: 70vw; */
+            height: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            /* margin-left: 5vw; */
+         margin-top: 10px;
+        
+        
+        }
+        .all-dashboad-div-container{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap:30px;
+        
+        }
+        .status-sec{
+        background-color: rgb(6, 81, 82);
+        border-radius: 5px;
+        }
+        .service-reg-container{
+        margin-left: 5vw;
+         margin-top: 10px;
+        height: max-content;
+        /* width: 90vw; */
+        background-color: rgb(9, 9, 43);
+        
+        }
+         .proj-reg-btn{
+        background-color: black;
+        }
+        .financials{
+        /* width:80vw; */
+        width: max-content;
+        height: max-content; 
+        padding: 20px;
+        background-color: rgb(9, 9, 43);
+       
+        }
+        .overall-pay-div{
+        display: flex;
+        flex-direction: row;
+        gap:5px;
+        justify-content: space-evenly;
+        }
+        .pay-btn{
+        width: max-content;
+        margin: auto;
+        }
+        .a-o-b{
+        width:90vw;
+        height: max-content;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(9, 9, 43);
+        padding: 20px;
+        
+        }
+        
+        
+        /* Services link css*/
+        .overall-service-link{
+        background-color:rgb(33, 2, 76);
+        width:100vw;
+        height: max-content;
+        padding: 10px;
+        }
+        table{
+        width: 90vw;
+        margin-left:5vw
+        }
+        tr{
+            border:1px solid white;
+           
+        }
+        td,th{
+            border-left: 1px solid white;
+            padding:5px;
+        }
+        .upload-supporting-documents{
+            width:90vw;
+            height: max-content;
+            padding: 15px;
+            background-color: rgb(9, 9, 43);
+            margin-right:auto;
+            margin-left: auto;
+            margin-top: 20px;
+        }
+        .form-btn-holder{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        /*financials css*/
+        .overall-financial-component{
+        height:100vh;
+        width: 100vw;
+        background-color:rgb(33, 2, 76);
+        }
+        .financials-balance-display{
+        width:90vw;
+        height:max-content;
+        padding: 20px;
+        background-color: rgb(9, 9, 43);
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 20px;
+        }
+        .payment-categories{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .form-pay{
+        
+        }
+        
+        
+        .reg-overall-container{
+            background-color:rgb(33, 2, 76);
+            height: max-content;
+            width: 100vw;
+            padding: 20px;
+        }
 }

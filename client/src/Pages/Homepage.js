@@ -22,7 +22,7 @@ export default function Homepage() {
             <div className='opacity-regulator'></div>
             <div className='hmpg-txt-img'>
                 <h3 className='text-light top-img-heading p-1'>WordPress</h3>
-                <p className='text-light fs-5'>WinkyWebbers company designs and builds platforms,portfolios and offers free consultation to entrepreneurs 
+                <p className='text-light top-img-paragraph '>WinkyWebbers company designs and builds platforms,portfolios and offers free consultation to entrepreneurs 
                     on matters of type of website or platform to consider to ensure risk is minimised 
                     </p>
             </div>

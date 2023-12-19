@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
+import axios from 'axios';
 import './Dashboard.css'
 import { IoIosMenu,IoIosClose } from "react-icons/io";
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -7,10 +8,30 @@ import { FaHome,FaFileContract } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { FaMoneyCheck } from "react-icons/fa6";
 import { AiTwotoneMessage } from "react-icons/ai";
+import {Bar} from 'react-chartjs-2'
+import { Alert } from 'bootstrap';
 // import bgimg from '../Images/pexels-codioful-(formerly-gradienta)-6985260.jpg'
 
 function Clientdisplay(){
+  let [users,setUsers]=useState([{}]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:4000/login');
+        const jsonData = await response.json();
+        setUsers(jsonData);
+        console.log(jsonData)
+        
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []); 
+  
     const [sidebar,Setsidebar]=useState(false);
+    let [paybtn,setPaybtn]=useState(false)
     function Headersection(){
         //const [clients,Setclients]=useState(false);
   
@@ -21,7 +42,7 @@ function Clientdisplay(){
        </div>
        <div className='right-header-section p-1'>
        <div className='user-name-holder'>
-          <p className='p-2 text-light fs-6'>Ikou Davis</p>
+          <p className='p-2 text-light fs-6'>{users[0].userName}</p>
         </div>
         <div className='profile-picture'>
          <img src={userimg}alt='image of account owner'className='rounded-circle'/>
@@ -30,14 +51,67 @@ function Clientdisplay(){
         </div>
     )
     }
+     
 
+
+    function Financial(){
+      const [pay,setPay]=useState(false);
+      let displaypay=(value)=>{
+         setPay(!pay);
+      }
+      return(
+          <div className='overall-financial-component'>
+          <h4 style={{marginLeft:'20px'}}className='text-light'>Finances</h4>
+
+          <div className='financials-table'onClick={()=>setPay(false)}>
+          <table>
+<tr>
+  <th className='text-light'>project name</th>
+  <th className='text-light'>Paid(kes)</th>
+  <th className='text-light'>Balance</th>
+  <th className='text-light'>Date</th>
+</tr>
+<tr>
+  <td className='text-light'>Portfolio</td>
+  <td className='text-light'>10,000</td>
+  <td className='text-light'>5,000</td>
+  <td className='text-light'>12/12/2023</td>
+</tr>
+</table>
+          </div>
+          <div className='financials-balance-display'>
+         <p onClick={()=>setPay(false)} style={{textAlign:'center'}}className='text-light'>How do you want to pay</p>
+         <p onClick={()=>setPay(false)} className='text-light' style={{textAlign:'center'}}>Total amount<br/>KES 40,000</p>
+         <div className='payment-categories'>
+          <div className='phase 1'>
+            <button onClick={()=>displaypay('phase')} className='btn btn-lg text-light bg-primary'>Phases pay</button>
+          </div>
+          <div className='phase 2'>
+         <button onClick={()=>displaypay('pay all')} className='btn btn-lg text-light btn-primary'>Pay all</button>
+          </div>
+         </div>
+          </div>  
+          <div className='payment-method'>
+             {pay &&  <form>
+                  <label className='text-light'>Select paymeny method</label>
+          <select class="form-select mt-3">
+   <option>MPESA</option>
+   <option>Paypal</option>
+ </select>
+ <button style={{marginTop:'10px'}} type='submit'className='btn btn-success btn-sm'>Submit</button>
+ </form>}
+          </div>
+          </div>
+      )
+      }
      function FirstLinkContent(){
         return(
             <div className='first-link-overall'style={{backgroundImage:'url(bgimg)'}}>
                 
                 <h4 style={{marginLeft:'20px'}}className='text-light'>Dashboard</h4>
+                <div className='all-dashboad-div-container'>
                 <div className='welcome-screen p-2'>
-                    <h6 className='text-light'style={{textAlign:'center'}}>Welcome back Davis</h6>
+                    <h6 className='text-light'style={{textAlign:'center'}}>Welcome back {users[0].userName}</h6>
                 <p className='text-light'style={{textAlign:'center'}}>The current status of your service is  <span className='status-sec p-1 text-light'>Inactive</span></p>
                <p style={{textAlign:'center'}} className='text-light'> Please finish the registration process below.</p>
                <div className='progress-status'>
@@ -45,6 +119,7 @@ function Clientdisplay(){
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated" style={{width:'40%'}}>40%</div>
                    </div>
+                   
                </div>
               </div>
               <div className='service-reg-container p-3'>
@@ -67,9 +142,10 @@ function Clientdisplay(){
                    <h4 style={{textAlign:'center'}} className='text-danger'><sup><small>KES</small></sup>10,000</h4>
                    </div>
                    </div>
-                   <div className='pay-btn'>
-                    <button type='button' className='btn bg-success btn-large text-light'>Pay now</button>
-                   </div>
+                   {/* <div className='pay-btn'>
+                    <button onClick={()=>{setFinance(true);component=<Financial/>}} type='button' className='btn bg-success btn-large text-light'>Pay now</button>
+                   </div> */}
+              </div>
               </div>
               <div className='a-o-b'>
                <p className='text-light'>Say something about our services,upgrade we should make on our system or improvent on our services</p>
@@ -91,7 +167,7 @@ function Clientdisplay(){
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
               </div>
-              
+             
             </div>
         )
      }
@@ -122,64 +198,24 @@ function Clientdisplay(){
     </div>
         )
      }
-     function Financial(){
-        const [pay,setPay]=useState(false);
-        let displaypay=(value)=>{
-           setPay(!pay);
-        }
-        return(
-            <div className='overall-financial-component'>
-            <h4 style={{marginLeft:'20px'}}className='text-light'>Finances</h4>
-
-            <div className='financials-table'onClick={()=>setPay(false)}>
-            <table>
-  <tr>
-    <th className='text-light'>project name</th>
-    <th className='text-light'>Paid(kes)</th>
-    <th className='text-light'>Balance</th>
-    <th className='text-light'>Date</th>
-  </tr>
-  <tr>
-    <td className='text-light'>Portfolio</td>
-    <td className='text-light'>10,000</td>
-    <td className='text-light'>5,000</td>
-    <td className='text-light'>12/12/2023</td>
-  </tr>
-</table>
-            </div>
-            <div className='financials-balance-display'>
-           <p onClick={()=>setPay(false)} style={{textAlign:'center'}}className='text-light'>How do you want to pay</p>
-           <p onClick={()=>setPay(false)} className='text-light' style={{textAlign:'center'}}>Total amount<br/>KES 40,000</p>
-           <div className='payment-categories'>
-            <div className='phase 1'>
-              <button onClick={()=>displaypay('phase')} className='btn btn-lg text-light bg-primary'>Phases pay</button>
-            </div>
-            <div className='phase 2'>
-           <button onClick={()=>displaypay('pay all')} className='btn btn-lg text-light btn-primary'>Pay all</button>
-            </div>
-           </div>
-            </div>  
-            <div className='payment-method'>
-               {pay &&  <form>
-                    <label className='text-light'>Select paymeny method</label>
-            <select class="form-select mt-3">
-     <option>MPESA</option>
-     <option>Paypal</option>
-   </select>
-   <button style={{marginTop:'10px'}} type='submit'className='btn btn-success btn-sm'>Submit</button>
-   </form>}
-            </div>
-            </div>
-        )
-        }
+    
      
         function Registration(){
+          const [projdata,setProjdata]=useState({
+         listedplan:'',
+         noliplan:'',
+         goal:'',
+         addgoal:'',
+         file:'',
+          })
+
+
             return(
                 <div className='reg-overall-container'>
                      <h4 style={{marginLeft:'20px'}}className='text-light'>Register project</h4>
                      <form>
                         <label className='text-light'>Project category</label>
-                     <select  class="form-select form-select-sm mt-3 form-control">
+                     <select required class="form-select form-select-sm mt-3 form-control">
      <option>1 pager landing</option>
      <option>1 pager branding</option>
      <option>Upto 5 pages </option>
